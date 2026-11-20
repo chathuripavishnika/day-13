@@ -1,7 +1,7 @@
 // console.log("hi");
 
  
-localStorage.setItem("name","chathu");
+localStorage.setItem("name","neha");
 
 let cname=localStorage.getItem("name");
 
