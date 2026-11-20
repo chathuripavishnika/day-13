@@ -41,19 +41,23 @@
 
 function addCustomer(){
 
-    let CustomerId=document.getElementById("customerId").value;
-    let CustomerName=document.getElementById("customerName").value;
-    let CustomerAge=document.getElementById("customerAge").value;
-    let CustomerAddress=document.getElementById("customerAddress").value;
+    alert("Button Clicked!");
 
-    const Customer={
-        custId:CustomerId,
-        custName:CustomerName,
-        custAge:CustomerAge,
-        custAddress:CustomerAddress
-    }
+    let CustomerId = document.getElementById("customerId").value;
+    let CustomerName = document.getElementById("customerName").value;
+    let CustomerAge = document.getElementById("customerAge").value;
+    let CustomerAddress = document.getElementById("customerAddress").value;
+
+    const Customer = {
+        custId: CustomerId,
+        custName: CustomerName,
+        custAge: CustomerAge,
+        custAddress: CustomerAddress
+    };
 
     saveCustomerLocalDb(Customer);
+
+    alert("Customer Added Successfully!");
 }
 function saveCustomerLocalDb(Customer){
 
