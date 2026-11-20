@@ -58,16 +58,24 @@
 // }
 // localStorage.clear;
 
-import Customer from "./model/cistomer.js";
-import Item from "./model/Item.js";
 
-let Customer = new Customer("C001","C002");
-console.log(Customer);
-let item = new Item();
-console.log(item);
 
-import{ CustomerList,getSum } from "./Example.js";
+// import Customer from "./model/Customer.js";
+// import Item from "./model/Item.js";
+
+// let customer = new Customer("C001","Kamal");
+
+// console.log(customer);
+
+// let item = new Item();
+
+// console.log(item);
+
+
+import { CustomerList, getSum } from "./Example.js";
 
 console.log(CustomerList);
-let Sum=getSum(10,20);
+
+let Sum = getSum(10,20);
+
 console.log(Sum);
