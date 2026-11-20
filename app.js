@@ -36,5 +36,5 @@ const CustomerList=[
 ]
  let arCustomers=JSON.stringify(CustomerList);
  localStorage.setItem("CustomerList" , arCustomers);
- let listCustomer=localStorage.getItem("Customerlist");
+ let listCustomer=localStorage.getItem("CustomerList");
  console.log(JSON.parse(listCustomer));
