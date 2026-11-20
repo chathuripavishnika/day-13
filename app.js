@@ -60,16 +60,16 @@
 
 
 
-// import Customer from "./model/Customer.js";
-// import Item from "./model/Item.js";
+import Customer from "./model/Customer.js";
+import Item from "./model/Item.js";
 
-// let customer = new Customer("C001","Kamal");
+let customer = new Customer("C001","Kamal");
 
-// console.log(customer);
+console.log(customer);
 
-// let item = new Item();
+let item = new Item();
 
-// console.log(item);
+console.log(item);
 
 
 import { CustomerList, getSum } from "./Example.js";
