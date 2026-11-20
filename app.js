@@ -7,33 +7,9 @@
 
 // console.log("cname");
 
-// localStorage.clear;
+//localStorage.clear();
 
-// const CustomerList=[
-//     {
-//         Name:"chathu",
-//         age:21,
-//         Adress:"Hambantota"
-//     },
-
-//     {
-//         Name:"Hiru",
-//         age:20,
-//         Adress:"Rathnapura"
-//     },
-
-//     {
-//         Name:"hiruni",
-//         age:21,
-//         Adress:"Monaragala"
-//     },
-
-//     {
-//         Name:"Nethra",
-//         age:21,
-//         Adress:"Ambilipitiya"
-//     }
-// ]
+// const CustomerList=[]
 //  let arCustomers=JSON.stringify(CustomerList);
 //  localStorage.setItem("CustomerList" , arCustomers);
 //  let listCustomer=localStorage.getItem("CustomerList");
@@ -41,8 +17,7 @@
 
 function addCustomer(){
 
-    alert("Button Clicked!");
-
+    
     let CustomerId = document.getElementById("customerId").value;
     let CustomerName = document.getElementById("customerName").value;
     let CustomerAge = document.getElementById("customerAge").value;
@@ -57,12 +32,12 @@ function addCustomer(){
 
     saveCustomerLocalDb(Customer);
 
-    alert("Customer Added Successfully!");
+    
 }
 function saveCustomerLocalDb(Customer){
 
     if(localStorage.getItem('CustomerList')){
-
+        console.log(true);
         let arofCustomers=JSON.parse(localStorage.getItem("CustomerList"));
 
         arofCustomers.push(Customer);
@@ -70,7 +45,7 @@ function saveCustomerLocalDb(Customer){
         localStorage.setItem("CustomerList",JSON.stringify(arofCustomers));
 
     }else{
-
+        console.log(false);
         const CustomerList=[];
 
         CustomerList.push(Customer);
@@ -81,3 +56,4 @@ function saveCustomerLocalDb(Customer){
 
     }
 }
+localStorage.clear;
